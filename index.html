@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego En Desarrollo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background"></div> <!-- Fondo detrás del juego -->
+    <div id="welcomeScreen">
+        <h1>Bienvenidos a la serpiente de Paato9</h1>
+        <button id="startButton">Jugar</button>
+    </div>
+    <div id="gameScreen" style="display:none;">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div id="pauseScreen" style="display:none;">
+            <div id="pauseMessage">Juego en pausa</div>
+            <button id="resumeButton">Reanudar</button>
+        </div>
+    </div>
+    <button id="pauseButton" style="display:none;">Pausar</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div id="scoreScreen">
+    <span id="score">Comida: 0</span>
+</div>
+
